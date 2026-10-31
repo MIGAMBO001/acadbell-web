@@ -1,0 +1,30 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/download",
+      "destination": "https://github.com/MIGAMBO001/ACADBELL/releases/download/v1.0.0/ACADBELL-v1.0.0-release.apk",
+      "permanent": false
+    },
+    {
+      "source": "/download/debug",
+      "destination": "https://github.com/MIGAMBO001/ACADBELL/releases/download/v1.0.0/ACADBELL-v1.0.0-debug.apk",
+      "permanent": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "acadbell-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ACADBELL — offline academic reading timetable, alarm and topic tracker for students",
+  "scripts": {
+    "build": "node -e \"console.log('static site: nothing to build')\"",
+    "dev": "npx serve . -l 3000",
+    "start": "npx serve . -l 3000"
+  }
+}
